@@ -1,0 +1,5651 @@
+{"xref": {
+  "stories": [
+    {
+      "story": {
+        "path": "stories/calculator.story",
+        "description": {
+          "descriptionAsString": ""
+        },
+        "narrative": {
+          "inOrderTo": "",
+          "asA": "user",
+          "iWantTo": "make an operation",
+          "soThat": "I can get results of two numbers"
+        },
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": {
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ]
+            },
+            "propertiesAsString": "",
+            "namedParameters": []
+          }
+        },
+        "lifecycle": {
+          "before": {
+            "steps": [
+              []
+            ]
+          },
+          "after": []
+        },
+        "scenarios": [
+          {
+            "title": "scenario addition of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|+|1|2|3|\r\n|+|10|300|310|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "+"
+                  ],
+                  [
+                    "number1",
+                    "1"
+                  ],
+                  [
+                    "number2",
+                    "2"
+                  ],
+                  [
+                    "result",
+                    "3"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "+"
+                  ],
+                  [
+                    "number1",
+                    "10"
+                  ],
+                  [
+                    "number2",
+                    "300"
+                  ],
+                  [
+                    "result",
+                    "310"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          },
+          {
+            "title": "scenario division of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|-|10|2|8|\r\n|-|120|20|100|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "-"
+                  ],
+                  [
+                    "number1",
+                    "10"
+                  ],
+                  [
+                    "number2",
+                    "2"
+                  ],
+                  [
+                    "result",
+                    "8"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "-"
+                  ],
+                  [
+                    "number1",
+                    "120"
+                  ],
+                  [
+                    "number2",
+                    "20"
+                  ],
+                  [
+                    "result",
+                    "100"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          },
+          {
+            "title": "scenario multiplication of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|*|10|2|20|\r\n|*|0|20|0|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "*"
+                  ],
+                  [
+                    "number1",
+                    "10"
+                  ],
+                  [
+                    "number2",
+                    "2"
+                  ],
+                  [
+                    "result",
+                    "20"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "*"
+                  ],
+                  [
+                    "number1",
+                    "0"
+                  ],
+                  [
+                    "number2",
+                    "20"
+                  ],
+                  [
+                    "result",
+                    "0"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          },
+          {
+            "title": "scenario division of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|/|16|8|2|\r\n|/|100|0|Infinity|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "/"
+                  ],
+                  [
+                    "number1",
+                    "16"
+                  ],
+                  [
+                    "number2",
+                    "8"
+                  ],
+                  [
+                    "result",
+                    "2"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "/"
+                  ],
+                  [
+                    "number1",
+                    "100"
+                  ],
+                  [
+                    "number2",
+                    "0"
+                  ],
+                  [
+                    "result",
+                    "Infinity"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          }
+        ],
+        "name": "calculator.story"
+      },
+      "localizedNarrative": "As a user\nI want to make an operation\nSo that I can get results of two numbers",
+      "allowed": true,
+      "status": "SUCCESSFUL",
+      "givenStories": [],
+      "scenarios": [
+        {
+          "scenario": {
+            "title": "scenario addition of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|+|1|2|3|\r\n|+|10|300|310|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "+"
+                  ],
+                  [
+                    "number1",
+                    "1"
+                  ],
+                  [
+                    "number2",
+                    "2"
+                  ],
+                  [
+                    "result",
+                    "3"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "+"
+                  ],
+                  [
+                    "number1",
+                    "10"
+                  ],
+                  [
+                    "number2",
+                    "300"
+                  ],
+                  [
+                    "result",
+                    "310"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          },
+          "storyPath": "stories/calculator.story",
+          "allowed": true,
+          "examplePerformableScenarios": [
+            {
+              "parameters": [
+                [
+                  "sign",
+                  "+"
+                ],
+                [
+                  "number1",
+                  "1"
+                ],
+                [
+                  "number2",
+                  "2"
+                ],
+                [
+                  "result",
+                  "3"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [],
+                "results": [
+                  {
+                    "step": "Given user opens calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given user opens calculator page",
+                    "durationInMillis": 9609,
+                    "start": 1522668670995,
+                    "end": 1522668680604
+                  },
+                  {
+                    "step": "And user gets empty entry field",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user gets empty entry field",
+                    "durationInMillis": 337,
+                    "start": 1522668680614,
+                    "end": 1522668680951
+                  },
+                  {
+                    "step": "When user selects the first number as <number1>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When user selects the first number as ｟1｠",
+                    "durationInMillis": 166,
+                    "start": 1522668680951,
+                    "end": 1522668681117
+                  },
+                  {
+                    "step": "And user selects the operation sign as <sign>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the operation sign as ｟+｠",
+                    "durationInMillis": 104,
+                    "start": 1522668681117,
+                    "end": 1522668681221
+                  },
+                  {
+                    "step": "And user selects the second number as <number2>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the second number as ｟2｠",
+                    "durationInMillis": 39,
+                    "start": 1522668681222,
+                    "end": 1522668681261
+                  },
+                  {
+                    "step": "And user selects the equal sign",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the equal sign",
+                    "durationInMillis": 98,
+                    "start": 1522668681261,
+                    "end": 1522668681359
+                  },
+                  {
+                    "step": "Then user gets the result as <result>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then user gets the result as ｟3｠",
+                    "durationInMillis": 58,
+                    "start": 1522668681361,
+                    "end": 1522668681419
+                  },
+                  {
+                    "step": "And user closes calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user closes calculator page",
+                    "durationInMillis": 879,
+                    "start": 1522668681421,
+                    "end": 1522668682300
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              },
+              "storyAndScenarioMeta": {
+                "properties": []
+              },
+              "scenario": {
+                "title": "scenario addition of two numbers",
+                "meta": {
+                  "properties": []
+                },
+                "givenStories": {
+                  "givenStories": [],
+                  "givenStoriesAsString": "",
+                  "examplesTable": {
+                    "tableAsString": "",
+                    "tableTransformers": {
+                      "transformers": [
+                        [
+                          "FORMATTING",
+                          {}
+                        ],
+                        [
+                          "REPLACING",
+                          {}
+                        ],
+                        [
+                          "FROM_LANDSCAPE",
+                          {}
+                        ]
+                      ]
+                    },
+                    "headers": [],
+                    "data": [],
+                    "properties": {
+                      "properties": [
+                        {
+                          "@name": "headerSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "valueSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "ignorableSeparator",
+                          "@value": "|--"
+                        }
+                      ]
+                    },
+                    "propertiesAsString": "",
+                    "namedParameters": []
+                  }
+                },
+                "examplesTable": {
+                  "tableAsString": "|sign|number1|number2|result|\r\n|+|1|2|3|\r\n|+|10|300|310|",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [
+                    "sign",
+                    "number1",
+                    "number2",
+                    "result"
+                  ],
+                  "data": [
+                    [
+                      [
+                        "sign",
+                        "+"
+                      ],
+                      [
+                        "number1",
+                        "1"
+                      ],
+                      [
+                        "number2",
+                        "2"
+                      ],
+                      [
+                        "result",
+                        "3"
+                      ]
+                    ],
+                    [
+                      [
+                        "sign",
+                        "+"
+                      ],
+                      [
+                        "number1",
+                        "10"
+                      ],
+                      [
+                        "number2",
+                        "300"
+                      ],
+                      [
+                        "result",
+                        "310"
+                      ]
+                    ]
+                  ],
+                  "properties": {
+                    "properties": [
+                      {
+                        "@name": "headerSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "valueSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "ignorableSeparator",
+                        "@value": "|--"
+                      }
+                    ]
+                  },
+                  "propertiesAsString": "",
+                  "namedParameters": []
+                },
+                "steps": [
+                  "Given user opens calculator page",
+                  "And user gets empty entry field",
+                  "When user selects the first number as <number1>",
+                  "And user selects the operation sign as <sign>",
+                  "And user selects the second number as <number2>",
+                  "And user selects the equal sign",
+                  "Then user gets the result as <result>",
+                  "And user closes calculator page"
+                ]
+              }
+            },
+            {
+              "parameters": [
+                [
+                  "sign",
+                  "+"
+                ],
+                [
+                  "number1",
+                  "10"
+                ],
+                [
+                  "number2",
+                  "300"
+                ],
+                [
+                  "result",
+                  "310"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [],
+                "results": [
+                  {
+                    "step": "Given user opens calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given user opens calculator page",
+                    "durationInMillis": 9928,
+                    "start": 1522668682300,
+                    "end": 1522668692228
+                  },
+                  {
+                    "step": "And user gets empty entry field",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user gets empty entry field",
+                    "durationInMillis": 134,
+                    "start": 1522668692229,
+                    "end": 1522668692363
+                  },
+                  {
+                    "step": "When user selects the first number as <number1>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When user selects the first number as ｟10｠",
+                    "durationInMillis": 80,
+                    "start": 1522668692366,
+                    "end": 1522668692446
+                  },
+                  {
+                    "step": "And user selects the operation sign as <sign>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the operation sign as ｟+｠",
+                    "durationInMillis": 85,
+                    "start": 1522668692447,
+                    "end": 1522668692532
+                  },
+                  {
+                    "step": "And user selects the second number as <number2>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the second number as ｟300｠",
+                    "durationInMillis": 49,
+                    "start": 1522668692534,
+                    "end": 1522668692583
+                  },
+                  {
+                    "step": "And user selects the equal sign",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the equal sign",
+                    "durationInMillis": 87,
+                    "start": 1522668692584,
+                    "end": 1522668692671
+                  },
+                  {
+                    "step": "Then user gets the result as <result>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then user gets the result as ｟310｠",
+                    "durationInMillis": 54,
+                    "start": 1522668692673,
+                    "end": 1522668692727
+                  },
+                  {
+                    "step": "And user closes calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user closes calculator page",
+                    "durationInMillis": 913,
+                    "start": 1522668692728,
+                    "end": 1522668693641
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              },
+              "storyAndScenarioMeta": {
+                "properties": []
+              },
+              "scenario": {
+                "title": "scenario addition of two numbers",
+                "meta": {
+                  "properties": []
+                },
+                "givenStories": {
+                  "givenStories": [],
+                  "givenStoriesAsString": "",
+                  "examplesTable": {
+                    "tableAsString": "",
+                    "tableTransformers": {
+                      "transformers": [
+                        [
+                          "FORMATTING",
+                          {}
+                        ],
+                        [
+                          "REPLACING",
+                          {}
+                        ],
+                        [
+                          "FROM_LANDSCAPE",
+                          {}
+                        ]
+                      ]
+                    },
+                    "headers": [],
+                    "data": [],
+                    "properties": {
+                      "properties": [
+                        {
+                          "@name": "headerSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "valueSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "ignorableSeparator",
+                          "@value": "|--"
+                        }
+                      ]
+                    },
+                    "propertiesAsString": "",
+                    "namedParameters": []
+                  }
+                },
+                "examplesTable": {
+                  "tableAsString": "|sign|number1|number2|result|\r\n|+|1|2|3|\r\n|+|10|300|310|",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [
+                    "sign",
+                    "number1",
+                    "number2",
+                    "result"
+                  ],
+                  "data": [
+                    [
+                      [
+                        "sign",
+                        "+"
+                      ],
+                      [
+                        "number1",
+                        "1"
+                      ],
+                      [
+                        "number2",
+                        "2"
+                      ],
+                      [
+                        "result",
+                        "3"
+                      ]
+                    ],
+                    [
+                      [
+                        "sign",
+                        "+"
+                      ],
+                      [
+                        "number1",
+                        "10"
+                      ],
+                      [
+                        "number2",
+                        "300"
+                      ],
+                      [
+                        "result",
+                        "310"
+                      ]
+                    ]
+                  ],
+                  "properties": {
+                    "properties": [
+                      {
+                        "@name": "headerSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "valueSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "ignorableSeparator",
+                        "@value": "|--"
+                      }
+                    ]
+                  },
+                  "propertiesAsString": "",
+                  "namedParameters": []
+                },
+                "steps": [
+                  "Given user opens calculator page",
+                  "And user gets empty entry field",
+                  "When user selects the first number as <number1>",
+                  "And user selects the operation sign as <sign>",
+                  "And user selects the second number as <number2>",
+                  "And user selects the equal sign",
+                  "Then user gets the result as <result>",
+                  "And user closes calculator page"
+                ]
+              }
+            }
+          ],
+          "status": "SUCCESSFUL"
+        },
+        {
+          "scenario": {
+            "title": "scenario division of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|-|10|2|8|\r\n|-|120|20|100|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "-"
+                  ],
+                  [
+                    "number1",
+                    "10"
+                  ],
+                  [
+                    "number2",
+                    "2"
+                  ],
+                  [
+                    "result",
+                    "8"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "-"
+                  ],
+                  [
+                    "number1",
+                    "120"
+                  ],
+                  [
+                    "number2",
+                    "20"
+                  ],
+                  [
+                    "result",
+                    "100"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          },
+          "storyPath": "stories/calculator.story",
+          "allowed": true,
+          "examplePerformableScenarios": [
+            {
+              "parameters": [
+                [
+                  "sign",
+                  "-"
+                ],
+                [
+                  "number1",
+                  "10"
+                ],
+                [
+                  "number2",
+                  "2"
+                ],
+                [
+                  "result",
+                  "8"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [],
+                "results": [
+                  {
+                    "step": "Given user opens calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given user opens calculator page",
+                    "durationInMillis": 9623,
+                    "start": 1522668693732,
+                    "end": 1522668703355
+                  },
+                  {
+                    "step": "And user gets empty entry field",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user gets empty entry field",
+                    "durationInMillis": 104,
+                    "start": 1522668703356,
+                    "end": 1522668703460
+                  },
+                  {
+                    "step": "When user selects the first number as <number1>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When user selects the first number as ｟10｠",
+                    "durationInMillis": 77,
+                    "start": 1522668703462,
+                    "end": 1522668703539
+                  },
+                  {
+                    "step": "And user selects the operation sign as <sign>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the operation sign as ｟-｠",
+                    "durationInMillis": 99,
+                    "start": 1522668703539,
+                    "end": 1522668703638
+                  },
+                  {
+                    "step": "And user selects the second number as <number2>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the second number as ｟2｠",
+                    "durationInMillis": 42,
+                    "start": 1522668703639,
+                    "end": 1522668703681
+                  },
+                  {
+                    "step": "And user selects the equal sign",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the equal sign",
+                    "durationInMillis": 81,
+                    "start": 1522668703681,
+                    "end": 1522668703762
+                  },
+                  {
+                    "step": "Then user gets the result as <result>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then user gets the result as ｟8｠",
+                    "durationInMillis": 54,
+                    "start": 1522668703772,
+                    "end": 1522668703826
+                  },
+                  {
+                    "step": "And user closes calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user closes calculator page",
+                    "durationInMillis": 873,
+                    "start": 1522668703827,
+                    "end": 1522668704700
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              },
+              "storyAndScenarioMeta": {
+                "properties": []
+              },
+              "scenario": {
+                "title": "scenario division of two numbers",
+                "meta": {
+                  "properties": []
+                },
+                "givenStories": {
+                  "givenStories": [],
+                  "givenStoriesAsString": "",
+                  "examplesTable": {
+                    "tableAsString": "",
+                    "tableTransformers": {
+                      "transformers": [
+                        [
+                          "FORMATTING",
+                          {}
+                        ],
+                        [
+                          "REPLACING",
+                          {}
+                        ],
+                        [
+                          "FROM_LANDSCAPE",
+                          {}
+                        ]
+                      ]
+                    },
+                    "headers": [],
+                    "data": [],
+                    "properties": {
+                      "properties": [
+                        {
+                          "@name": "headerSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "valueSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "ignorableSeparator",
+                          "@value": "|--"
+                        }
+                      ]
+                    },
+                    "propertiesAsString": "",
+                    "namedParameters": []
+                  }
+                },
+                "examplesTable": {
+                  "tableAsString": "|sign|number1|number2|result|\r\n|-|10|2|8|\r\n|-|120|20|100|",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [
+                    "sign",
+                    "number1",
+                    "number2",
+                    "result"
+                  ],
+                  "data": [
+                    [
+                      [
+                        "sign",
+                        "-"
+                      ],
+                      [
+                        "number1",
+                        "10"
+                      ],
+                      [
+                        "number2",
+                        "2"
+                      ],
+                      [
+                        "result",
+                        "8"
+                      ]
+                    ],
+                    [
+                      [
+                        "sign",
+                        "-"
+                      ],
+                      [
+                        "number1",
+                        "120"
+                      ],
+                      [
+                        "number2",
+                        "20"
+                      ],
+                      [
+                        "result",
+                        "100"
+                      ]
+                    ]
+                  ],
+                  "properties": {
+                    "properties": [
+                      {
+                        "@name": "headerSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "valueSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "ignorableSeparator",
+                        "@value": "|--"
+                      }
+                    ]
+                  },
+                  "propertiesAsString": "",
+                  "namedParameters": []
+                },
+                "steps": [
+                  "Given user opens calculator page",
+                  "And user gets empty entry field",
+                  "When user selects the first number as <number1>",
+                  "And user selects the operation sign as <sign>",
+                  "And user selects the second number as <number2>",
+                  "And user selects the equal sign",
+                  "Then user gets the result as <result>",
+                  "And user closes calculator page"
+                ]
+              }
+            },
+            {
+              "parameters": [
+                [
+                  "sign",
+                  "-"
+                ],
+                [
+                  "number1",
+                  "120"
+                ],
+                [
+                  "number2",
+                  "20"
+                ],
+                [
+                  "result",
+                  "100"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [],
+                "results": [
+                  {
+                    "step": "Given user opens calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given user opens calculator page",
+                    "durationInMillis": 9193,
+                    "start": 1522668704700,
+                    "end": 1522668713893
+                  },
+                  {
+                    "step": "And user gets empty entry field",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user gets empty entry field",
+                    "durationInMillis": 97,
+                    "start": 1522668713894,
+                    "end": 1522668713991
+                  },
+                  {
+                    "step": "When user selects the first number as <number1>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When user selects the first number as ｟120｠",
+                    "durationInMillis": 83,
+                    "start": 1522668713993,
+                    "end": 1522668714076
+                  },
+                  {
+                    "step": "And user selects the operation sign as <sign>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the operation sign as ｟-｠",
+                    "durationInMillis": 78,
+                    "start": 1522668714077,
+                    "end": 1522668714155
+                  },
+                  {
+                    "step": "And user selects the second number as <number2>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the second number as ｟20｠",
+                    "durationInMillis": 47,
+                    "start": 1522668714155,
+                    "end": 1522668714202
+                  },
+                  {
+                    "step": "And user selects the equal sign",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the equal sign",
+                    "durationInMillis": 99,
+                    "start": 1522668714202,
+                    "end": 1522668714301
+                  },
+                  {
+                    "step": "Then user gets the result as <result>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then user gets the result as ｟100｠",
+                    "durationInMillis": 59,
+                    "start": 1522668714302,
+                    "end": 1522668714361
+                  },
+                  {
+                    "step": "And user closes calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user closes calculator page",
+                    "durationInMillis": 889,
+                    "start": 1522668714362,
+                    "end": 1522668715251
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              },
+              "storyAndScenarioMeta": {
+                "properties": []
+              },
+              "scenario": {
+                "title": "scenario division of two numbers",
+                "meta": {
+                  "properties": []
+                },
+                "givenStories": {
+                  "givenStories": [],
+                  "givenStoriesAsString": "",
+                  "examplesTable": {
+                    "tableAsString": "",
+                    "tableTransformers": {
+                      "transformers": [
+                        [
+                          "FORMATTING",
+                          {}
+                        ],
+                        [
+                          "REPLACING",
+                          {}
+                        ],
+                        [
+                          "FROM_LANDSCAPE",
+                          {}
+                        ]
+                      ]
+                    },
+                    "headers": [],
+                    "data": [],
+                    "properties": {
+                      "properties": [
+                        {
+                          "@name": "headerSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "valueSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "ignorableSeparator",
+                          "@value": "|--"
+                        }
+                      ]
+                    },
+                    "propertiesAsString": "",
+                    "namedParameters": []
+                  }
+                },
+                "examplesTable": {
+                  "tableAsString": "|sign|number1|number2|result|\r\n|-|10|2|8|\r\n|-|120|20|100|",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [
+                    "sign",
+                    "number1",
+                    "number2",
+                    "result"
+                  ],
+                  "data": [
+                    [
+                      [
+                        "sign",
+                        "-"
+                      ],
+                      [
+                        "number1",
+                        "10"
+                      ],
+                      [
+                        "number2",
+                        "2"
+                      ],
+                      [
+                        "result",
+                        "8"
+                      ]
+                    ],
+                    [
+                      [
+                        "sign",
+                        "-"
+                      ],
+                      [
+                        "number1",
+                        "120"
+                      ],
+                      [
+                        "number2",
+                        "20"
+                      ],
+                      [
+                        "result",
+                        "100"
+                      ]
+                    ]
+                  ],
+                  "properties": {
+                    "properties": [
+                      {
+                        "@name": "headerSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "valueSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "ignorableSeparator",
+                        "@value": "|--"
+                      }
+                    ]
+                  },
+                  "propertiesAsString": "",
+                  "namedParameters": []
+                },
+                "steps": [
+                  "Given user opens calculator page",
+                  "And user gets empty entry field",
+                  "When user selects the first number as <number1>",
+                  "And user selects the operation sign as <sign>",
+                  "And user selects the second number as <number2>",
+                  "And user selects the equal sign",
+                  "Then user gets the result as <result>",
+                  "And user closes calculator page"
+                ]
+              }
+            }
+          ],
+          "status": "SUCCESSFUL"
+        },
+        {
+          "scenario": {
+            "title": "scenario multiplication of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|*|10|2|20|\r\n|*|0|20|0|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "*"
+                  ],
+                  [
+                    "number1",
+                    "10"
+                  ],
+                  [
+                    "number2",
+                    "2"
+                  ],
+                  [
+                    "result",
+                    "20"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "*"
+                  ],
+                  [
+                    "number1",
+                    "0"
+                  ],
+                  [
+                    "number2",
+                    "20"
+                  ],
+                  [
+                    "result",
+                    "0"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          },
+          "storyPath": "stories/calculator.story",
+          "allowed": true,
+          "examplePerformableScenarios": [
+            {
+              "parameters": [
+                [
+                  "sign",
+                  "*"
+                ],
+                [
+                  "number1",
+                  "10"
+                ],
+                [
+                  "number2",
+                  "2"
+                ],
+                [
+                  "result",
+                  "20"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [],
+                "results": [
+                  {
+                    "step": "Given user opens calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given user opens calculator page",
+                    "durationInMillis": 8784,
+                    "start": 1522668715261,
+                    "end": 1522668724045
+                  },
+                  {
+                    "step": "And user gets empty entry field",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user gets empty entry field",
+                    "durationInMillis": 111,
+                    "start": 1522668724047,
+                    "end": 1522668724158
+                  },
+                  {
+                    "step": "When user selects the first number as <number1>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When user selects the first number as ｟10｠",
+                    "durationInMillis": 73,
+                    "start": 1522668724160,
+                    "end": 1522668724233
+                  },
+                  {
+                    "step": "And user selects the operation sign as <sign>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the operation sign as ｟*｠",
+                    "durationInMillis": 123,
+                    "start": 1522668724233,
+                    "end": 1522668724356
+                  },
+                  {
+                    "step": "And user selects the second number as <number2>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the second number as ｟2｠",
+                    "durationInMillis": 57,
+                    "start": 1522668724356,
+                    "end": 1522668724413
+                  },
+                  {
+                    "step": "And user selects the equal sign",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the equal sign",
+                    "durationInMillis": 73,
+                    "start": 1522668724414,
+                    "end": 1522668724487
+                  },
+                  {
+                    "step": "Then user gets the result as <result>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then user gets the result as ｟20｠",
+                    "durationInMillis": 67,
+                    "start": 1522668724487,
+                    "end": 1522668724554
+                  },
+                  {
+                    "step": "And user closes calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user closes calculator page",
+                    "durationInMillis": 900,
+                    "start": 1522668724556,
+                    "end": 1522668725456
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              },
+              "storyAndScenarioMeta": {
+                "properties": []
+              },
+              "scenario": {
+                "title": "scenario multiplication of two numbers",
+                "meta": {
+                  "properties": []
+                },
+                "givenStories": {
+                  "givenStories": [],
+                  "givenStoriesAsString": "",
+                  "examplesTable": {
+                    "tableAsString": "",
+                    "tableTransformers": {
+                      "transformers": [
+                        [
+                          "FORMATTING",
+                          {}
+                        ],
+                        [
+                          "REPLACING",
+                          {}
+                        ],
+                        [
+                          "FROM_LANDSCAPE",
+                          {}
+                        ]
+                      ]
+                    },
+                    "headers": [],
+                    "data": [],
+                    "properties": {
+                      "properties": [
+                        {
+                          "@name": "headerSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "valueSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "ignorableSeparator",
+                          "@value": "|--"
+                        }
+                      ]
+                    },
+                    "propertiesAsString": "",
+                    "namedParameters": []
+                  }
+                },
+                "examplesTable": {
+                  "tableAsString": "|sign|number1|number2|result|\r\n|*|10|2|20|\r\n|*|0|20|0|",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [
+                    "sign",
+                    "number1",
+                    "number2",
+                    "result"
+                  ],
+                  "data": [
+                    [
+                      [
+                        "sign",
+                        "*"
+                      ],
+                      [
+                        "number1",
+                        "10"
+                      ],
+                      [
+                        "number2",
+                        "2"
+                      ],
+                      [
+                        "result",
+                        "20"
+                      ]
+                    ],
+                    [
+                      [
+                        "sign",
+                        "*"
+                      ],
+                      [
+                        "number1",
+                        "0"
+                      ],
+                      [
+                        "number2",
+                        "20"
+                      ],
+                      [
+                        "result",
+                        "0"
+                      ]
+                    ]
+                  ],
+                  "properties": {
+                    "properties": [
+                      {
+                        "@name": "headerSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "valueSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "ignorableSeparator",
+                        "@value": "|--"
+                      }
+                    ]
+                  },
+                  "propertiesAsString": "",
+                  "namedParameters": []
+                },
+                "steps": [
+                  "Given user opens calculator page",
+                  "And user gets empty entry field",
+                  "When user selects the first number as <number1>",
+                  "And user selects the operation sign as <sign>",
+                  "And user selects the second number as <number2>",
+                  "And user selects the equal sign",
+                  "Then user gets the result as <result>",
+                  "And user closes calculator page"
+                ]
+              }
+            },
+            {
+              "parameters": [
+                [
+                  "sign",
+                  "*"
+                ],
+                [
+                  "number1",
+                  "0"
+                ],
+                [
+                  "number2",
+                  "20"
+                ],
+                [
+                  "result",
+                  "0"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [],
+                "results": [
+                  {
+                    "step": "Given user opens calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given user opens calculator page",
+                    "durationInMillis": 10346,
+                    "start": 1522668725456,
+                    "end": 1522668735802
+                  },
+                  {
+                    "step": "And user gets empty entry field",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user gets empty entry field",
+                    "durationInMillis": 106,
+                    "start": 1522668735806,
+                    "end": 1522668735912
+                  },
+                  {
+                    "step": "When user selects the first number as <number1>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When user selects the first number as ｟0｠",
+                    "durationInMillis": 74,
+                    "start": 1522668735914,
+                    "end": 1522668735988
+                  },
+                  {
+                    "step": "And user selects the operation sign as <sign>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the operation sign as ｟*｠",
+                    "durationInMillis": 80,
+                    "start": 1522668735988,
+                    "end": 1522668736068
+                  },
+                  {
+                    "step": "And user selects the second number as <number2>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the second number as ｟20｠",
+                    "durationInMillis": 56,
+                    "start": 1522668736068,
+                    "end": 1522668736124
+                  },
+                  {
+                    "step": "And user selects the equal sign",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the equal sign",
+                    "durationInMillis": 91,
+                    "start": 1522668736125,
+                    "end": 1522668736216
+                  },
+                  {
+                    "step": "Then user gets the result as <result>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then user gets the result as ｟0｠",
+                    "durationInMillis": 50,
+                    "start": 1522668736226,
+                    "end": 1522668736276
+                  },
+                  {
+                    "step": "And user closes calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user closes calculator page",
+                    "durationInMillis": 1068,
+                    "start": 1522668736278,
+                    "end": 1522668737346
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              },
+              "storyAndScenarioMeta": {
+                "properties": []
+              },
+              "scenario": {
+                "title": "scenario multiplication of two numbers",
+                "meta": {
+                  "properties": []
+                },
+                "givenStories": {
+                  "givenStories": [],
+                  "givenStoriesAsString": "",
+                  "examplesTable": {
+                    "tableAsString": "",
+                    "tableTransformers": {
+                      "transformers": [
+                        [
+                          "FORMATTING",
+                          {}
+                        ],
+                        [
+                          "REPLACING",
+                          {}
+                        ],
+                        [
+                          "FROM_LANDSCAPE",
+                          {}
+                        ]
+                      ]
+                    },
+                    "headers": [],
+                    "data": [],
+                    "properties": {
+                      "properties": [
+                        {
+                          "@name": "headerSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "valueSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "ignorableSeparator",
+                          "@value": "|--"
+                        }
+                      ]
+                    },
+                    "propertiesAsString": "",
+                    "namedParameters": []
+                  }
+                },
+                "examplesTable": {
+                  "tableAsString": "|sign|number1|number2|result|\r\n|*|10|2|20|\r\n|*|0|20|0|",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [
+                    "sign",
+                    "number1",
+                    "number2",
+                    "result"
+                  ],
+                  "data": [
+                    [
+                      [
+                        "sign",
+                        "*"
+                      ],
+                      [
+                        "number1",
+                        "10"
+                      ],
+                      [
+                        "number2",
+                        "2"
+                      ],
+                      [
+                        "result",
+                        "20"
+                      ]
+                    ],
+                    [
+                      [
+                        "sign",
+                        "*"
+                      ],
+                      [
+                        "number1",
+                        "0"
+                      ],
+                      [
+                        "number2",
+                        "20"
+                      ],
+                      [
+                        "result",
+                        "0"
+                      ]
+                    ]
+                  ],
+                  "properties": {
+                    "properties": [
+                      {
+                        "@name": "headerSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "valueSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "ignorableSeparator",
+                        "@value": "|--"
+                      }
+                    ]
+                  },
+                  "propertiesAsString": "",
+                  "namedParameters": []
+                },
+                "steps": [
+                  "Given user opens calculator page",
+                  "And user gets empty entry field",
+                  "When user selects the first number as <number1>",
+                  "And user selects the operation sign as <sign>",
+                  "And user selects the second number as <number2>",
+                  "And user selects the equal sign",
+                  "Then user gets the result as <result>",
+                  "And user closes calculator page"
+                ]
+              }
+            }
+          ],
+          "status": "SUCCESSFUL"
+        },
+        {
+          "scenario": {
+            "title": "scenario division of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|/|16|8|2|\r\n|/|100|0|Infinity|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "/"
+                  ],
+                  [
+                    "number1",
+                    "16"
+                  ],
+                  [
+                    "number2",
+                    "8"
+                  ],
+                  [
+                    "result",
+                    "2"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "/"
+                  ],
+                  [
+                    "number1",
+                    "100"
+                  ],
+                  [
+                    "number2",
+                    "0"
+                  ],
+                  [
+                    "result",
+                    "Infinity"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          },
+          "storyPath": "stories/calculator.story",
+          "allowed": true,
+          "examplePerformableScenarios": [
+            {
+              "parameters": [
+                [
+                  "sign",
+                  "/"
+                ],
+                [
+                  "number1",
+                  "16"
+                ],
+                [
+                  "number2",
+                  "8"
+                ],
+                [
+                  "result",
+                  "2"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [],
+                "results": [
+                  {
+                    "step": "Given user opens calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given user opens calculator page",
+                    "durationInMillis": 10040,
+                    "start": 1522668737366,
+                    "end": 1522668747406
+                  },
+                  {
+                    "step": "And user gets empty entry field",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user gets empty entry field",
+                    "durationInMillis": 272,
+                    "start": 1522668747407,
+                    "end": 1522668747679
+                  },
+                  {
+                    "step": "When user selects the first number as <number1>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When user selects the first number as ｟16｠",
+                    "durationInMillis": 234,
+                    "start": 1522668747680,
+                    "end": 1522668747914
+                  },
+                  {
+                    "step": "And user selects the operation sign as <sign>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the operation sign as ｟/｠",
+                    "durationInMillis": 84,
+                    "start": 1522668747915,
+                    "end": 1522668747999
+                  },
+                  {
+                    "step": "And user selects the second number as <number2>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the second number as ｟8｠",
+                    "durationInMillis": 41,
+                    "start": 1522668748010,
+                    "end": 1522668748051
+                  },
+                  {
+                    "step": "And user selects the equal sign",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the equal sign",
+                    "durationInMillis": 90,
+                    "start": 1522668748053,
+                    "end": 1522668748143
+                  },
+                  {
+                    "step": "Then user gets the result as <result>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then user gets the result as ｟2｠",
+                    "durationInMillis": 55,
+                    "start": 1522668748145,
+                    "end": 1522668748200
+                  },
+                  {
+                    "step": "And user closes calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user closes calculator page",
+                    "durationInMillis": 865,
+                    "start": 1522668748202,
+                    "end": 1522668749067
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              },
+              "storyAndScenarioMeta": {
+                "properties": []
+              },
+              "scenario": {
+                "title": "scenario division of two numbers",
+                "meta": {
+                  "properties": []
+                },
+                "givenStories": {
+                  "givenStories": [],
+                  "givenStoriesAsString": "",
+                  "examplesTable": {
+                    "tableAsString": "",
+                    "tableTransformers": {
+                      "transformers": [
+                        [
+                          "FORMATTING",
+                          {}
+                        ],
+                        [
+                          "REPLACING",
+                          {}
+                        ],
+                        [
+                          "FROM_LANDSCAPE",
+                          {}
+                        ]
+                      ]
+                    },
+                    "headers": [],
+                    "data": [],
+                    "properties": {
+                      "properties": [
+                        {
+                          "@name": "headerSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "valueSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "ignorableSeparator",
+                          "@value": "|--"
+                        }
+                      ]
+                    },
+                    "propertiesAsString": "",
+                    "namedParameters": []
+                  }
+                },
+                "examplesTable": {
+                  "tableAsString": "|sign|number1|number2|result|\r\n|/|16|8|2|\r\n|/|100|0|Infinity|",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [
+                    "sign",
+                    "number1",
+                    "number2",
+                    "result"
+                  ],
+                  "data": [
+                    [
+                      [
+                        "sign",
+                        "/"
+                      ],
+                      [
+                        "number1",
+                        "16"
+                      ],
+                      [
+                        "number2",
+                        "8"
+                      ],
+                      [
+                        "result",
+                        "2"
+                      ]
+                    ],
+                    [
+                      [
+                        "sign",
+                        "/"
+                      ],
+                      [
+                        "number1",
+                        "100"
+                      ],
+                      [
+                        "number2",
+                        "0"
+                      ],
+                      [
+                        "result",
+                        "Infinity"
+                      ]
+                    ]
+                  ],
+                  "properties": {
+                    "properties": [
+                      {
+                        "@name": "headerSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "valueSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "ignorableSeparator",
+                        "@value": "|--"
+                      }
+                    ]
+                  },
+                  "propertiesAsString": "",
+                  "namedParameters": []
+                },
+                "steps": [
+                  "Given user opens calculator page",
+                  "And user gets empty entry field",
+                  "When user selects the first number as <number1>",
+                  "And user selects the operation sign as <sign>",
+                  "And user selects the second number as <number2>",
+                  "And user selects the equal sign",
+                  "Then user gets the result as <result>",
+                  "And user closes calculator page"
+                ]
+              }
+            },
+            {
+              "parameters": [
+                [
+                  "sign",
+                  "/"
+                ],
+                [
+                  "number1",
+                  "100"
+                ],
+                [
+                  "number2",
+                  "0"
+                ],
+                [
+                  "result",
+                  "Infinity"
+                ]
+              ],
+              "givenStories": [],
+              "beforeSteps": {
+                "matches": []
+              },
+              "steps": {
+                "matches": [],
+                "results": [
+                  {
+                    "step": "Given user opens calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Given user opens calculator page",
+                    "durationInMillis": 10445,
+                    "start": 1522668749067,
+                    "end": 1522668759512
+                  },
+                  {
+                    "step": "And user gets empty entry field",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user gets empty entry field",
+                    "durationInMillis": 430,
+                    "start": 1522668759513,
+                    "end": 1522668759943
+                  },
+                  {
+                    "step": "When user selects the first number as <number1>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "When user selects the first number as ｟100｠",
+                    "durationInMillis": 78,
+                    "start": 1522668759944,
+                    "end": 1522668760022
+                  },
+                  {
+                    "step": "And user selects the operation sign as <sign>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the operation sign as ｟/｠",
+                    "durationInMillis": 88,
+                    "start": 1522668760022,
+                    "end": 1522668760110
+                  },
+                  {
+                    "step": "And user selects the second number as <number2>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the second number as ｟0｠",
+                    "durationInMillis": 44,
+                    "start": 1522668760111,
+                    "end": 1522668760155
+                  },
+                  {
+                    "step": "And user selects the equal sign",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user selects the equal sign",
+                    "durationInMillis": 84,
+                    "start": 1522668760156,
+                    "end": 1522668760240
+                  },
+                  {
+                    "step": "Then user gets the result as <result>",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "Then user gets the result as ｟Infinity｠",
+                    "durationInMillis": 50,
+                    "start": 1522668760241,
+                    "end": 1522668760291
+                  },
+                  {
+                    "step": "And user closes calculator page",
+                    "type": "SUCCESSFUL",
+                    "parametrisedStep": "And user closes calculator page",
+                    "durationInMillis": 873,
+                    "start": 1522668760292,
+                    "end": 1522668761165
+                  }
+                ]
+              },
+              "afterSteps": {
+                "matches": []
+              },
+              "storyAndScenarioMeta": {
+                "properties": []
+              },
+              "scenario": {
+                "title": "scenario division of two numbers",
+                "meta": {
+                  "properties": []
+                },
+                "givenStories": {
+                  "givenStories": [],
+                  "givenStoriesAsString": "",
+                  "examplesTable": {
+                    "tableAsString": "",
+                    "tableTransformers": {
+                      "transformers": [
+                        [
+                          "FORMATTING",
+                          {}
+                        ],
+                        [
+                          "REPLACING",
+                          {}
+                        ],
+                        [
+                          "FROM_LANDSCAPE",
+                          {}
+                        ]
+                      ]
+                    },
+                    "headers": [],
+                    "data": [],
+                    "properties": {
+                      "properties": [
+                        {
+                          "@name": "headerSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "valueSeparator",
+                          "@value": "|"
+                        },
+                        {
+                          "@name": "ignorableSeparator",
+                          "@value": "|--"
+                        }
+                      ]
+                    },
+                    "propertiesAsString": "",
+                    "namedParameters": []
+                  }
+                },
+                "examplesTable": {
+                  "tableAsString": "|sign|number1|number2|result|\r\n|/|16|8|2|\r\n|/|100|0|Infinity|",
+                  "tableTransformers": {
+                    "transformers": [
+                      [
+                        "FORMATTING",
+                        {}
+                      ],
+                      [
+                        "REPLACING",
+                        {}
+                      ],
+                      [
+                        "FROM_LANDSCAPE",
+                        {}
+                      ]
+                    ]
+                  },
+                  "headers": [
+                    "sign",
+                    "number1",
+                    "number2",
+                    "result"
+                  ],
+                  "data": [
+                    [
+                      [
+                        "sign",
+                        "/"
+                      ],
+                      [
+                        "number1",
+                        "16"
+                      ],
+                      [
+                        "number2",
+                        "8"
+                      ],
+                      [
+                        "result",
+                        "2"
+                      ]
+                    ],
+                    [
+                      [
+                        "sign",
+                        "/"
+                      ],
+                      [
+                        "number1",
+                        "100"
+                      ],
+                      [
+                        "number2",
+                        "0"
+                      ],
+                      [
+                        "result",
+                        "Infinity"
+                      ]
+                    ]
+                  ],
+                  "properties": {
+                    "properties": [
+                      {
+                        "@name": "headerSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "valueSeparator",
+                        "@value": "|"
+                      },
+                      {
+                        "@name": "ignorableSeparator",
+                        "@value": "|--"
+                      }
+                    ]
+                  },
+                  "propertiesAsString": "",
+                  "namedParameters": []
+                },
+                "steps": [
+                  "Given user opens calculator page",
+                  "And user gets empty entry field",
+                  "When user selects the first number as <number1>",
+                  "And user selects the operation sign as <sign>",
+                  "And user selects the second number as <number2>",
+                  "And user selects the equal sign",
+                  "Then user gets the result as <result>",
+                  "And user closes calculator page"
+                ]
+              }
+            }
+          ],
+          "status": "SUCCESSFUL"
+        }
+      ],
+      "beforeSteps": {},
+      "afterSteps": {},
+      "timing": {
+        "durationInMillis": 90610,
+        "start": 1522668670555,
+        "end": 1522668761165
+      },
+      "givenStory": false
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario": {
+        "title": "scenario addition of two numbers",
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": {
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ]
+            },
+            "propertiesAsString": "",
+            "namedParameters": []
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "|sign|number1|number2|result|\r\n|+|1|2|3|\r\n|+|10|300|310|",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [
+            "sign",
+            "number1",
+            "number2",
+            "result"
+          ],
+          "data": [
+            [
+              [
+                "sign",
+                "+"
+              ],
+              [
+                "number1",
+                "1"
+              ],
+              [
+                "number2",
+                "2"
+              ],
+              [
+                "result",
+                "3"
+              ]
+            ],
+            [
+              [
+                "sign",
+                "+"
+              ],
+              [
+                "number1",
+                "10"
+              ],
+              [
+                "number2",
+                "300"
+              ],
+              [
+                "result",
+                "310"
+              ]
+            ]
+          ],
+          "properties": {
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ]
+          },
+          "propertiesAsString": "",
+          "namedParameters": []
+        },
+        "steps": [
+          "Given user opens calculator page",
+          "And user gets empty entry field",
+          "When user selects the first number as <number1>",
+          "And user selects the operation sign as <sign>",
+          "And user selects the second number as <number2>",
+          "And user selects the equal sign",
+          "Then user gets the result as <result>",
+          "And user closes calculator page"
+        ]
+      },
+      "storyPath": "stories/calculator.story",
+      "allowed": true,
+      "examplePerformableScenarios": [
+        {
+          "parameters": [
+            [
+              "sign",
+              "+"
+            ],
+            [
+              "number1",
+              "1"
+            ],
+            [
+              "number2",
+              "2"
+            ],
+            [
+              "result",
+              "3"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [],
+            "results": [
+              {
+                "step": "Given user opens calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given user opens calculator page",
+                "durationInMillis": 9609,
+                "start": 1522668670995,
+                "end": 1522668680604
+              },
+              {
+                "step": "And user gets empty entry field",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user gets empty entry field",
+                "durationInMillis": 337,
+                "start": 1522668680614,
+                "end": 1522668680951
+              },
+              {
+                "step": "When user selects the first number as <number1>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When user selects the first number as ｟1｠",
+                "durationInMillis": 166,
+                "start": 1522668680951,
+                "end": 1522668681117
+              },
+              {
+                "step": "And user selects the operation sign as <sign>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the operation sign as ｟+｠",
+                "durationInMillis": 104,
+                "start": 1522668681117,
+                "end": 1522668681221
+              },
+              {
+                "step": "And user selects the second number as <number2>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the second number as ｟2｠",
+                "durationInMillis": 39,
+                "start": 1522668681222,
+                "end": 1522668681261
+              },
+              {
+                "step": "And user selects the equal sign",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the equal sign",
+                "durationInMillis": 98,
+                "start": 1522668681261,
+                "end": 1522668681359
+              },
+              {
+                "step": "Then user gets the result as <result>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then user gets the result as ｟3｠",
+                "durationInMillis": 58,
+                "start": 1522668681361,
+                "end": 1522668681419
+              },
+              {
+                "step": "And user closes calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user closes calculator page",
+                "durationInMillis": 879,
+                "start": 1522668681421,
+                "end": 1522668682300
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          },
+          "storyAndScenarioMeta": {
+            "properties": []
+          },
+          "scenario": {
+            "title": "scenario addition of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|+|1|2|3|\r\n|+|10|300|310|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "+"
+                  ],
+                  [
+                    "number1",
+                    "1"
+                  ],
+                  [
+                    "number2",
+                    "2"
+                  ],
+                  [
+                    "result",
+                    "3"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "+"
+                  ],
+                  [
+                    "number1",
+                    "10"
+                  ],
+                  [
+                    "number2",
+                    "300"
+                  ],
+                  [
+                    "result",
+                    "310"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          }
+        },
+        {
+          "parameters": [
+            [
+              "sign",
+              "+"
+            ],
+            [
+              "number1",
+              "10"
+            ],
+            [
+              "number2",
+              "300"
+            ],
+            [
+              "result",
+              "310"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [],
+            "results": [
+              {
+                "step": "Given user opens calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given user opens calculator page",
+                "durationInMillis": 9928,
+                "start": 1522668682300,
+                "end": 1522668692228
+              },
+              {
+                "step": "And user gets empty entry field",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user gets empty entry field",
+                "durationInMillis": 134,
+                "start": 1522668692229,
+                "end": 1522668692363
+              },
+              {
+                "step": "When user selects the first number as <number1>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When user selects the first number as ｟10｠",
+                "durationInMillis": 80,
+                "start": 1522668692366,
+                "end": 1522668692446
+              },
+              {
+                "step": "And user selects the operation sign as <sign>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the operation sign as ｟+｠",
+                "durationInMillis": 85,
+                "start": 1522668692447,
+                "end": 1522668692532
+              },
+              {
+                "step": "And user selects the second number as <number2>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the second number as ｟300｠",
+                "durationInMillis": 49,
+                "start": 1522668692534,
+                "end": 1522668692583
+              },
+              {
+                "step": "And user selects the equal sign",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the equal sign",
+                "durationInMillis": 87,
+                "start": 1522668692584,
+                "end": 1522668692671
+              },
+              {
+                "step": "Then user gets the result as <result>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then user gets the result as ｟310｠",
+                "durationInMillis": 54,
+                "start": 1522668692673,
+                "end": 1522668692727
+              },
+              {
+                "step": "And user closes calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user closes calculator page",
+                "durationInMillis": 913,
+                "start": 1522668692728,
+                "end": 1522668693641
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          },
+          "storyAndScenarioMeta": {
+            "properties": []
+          },
+          "scenario": {
+            "title": "scenario addition of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|+|1|2|3|\r\n|+|10|300|310|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "+"
+                  ],
+                  [
+                    "number1",
+                    "1"
+                  ],
+                  [
+                    "number2",
+                    "2"
+                  ],
+                  [
+                    "result",
+                    "3"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "+"
+                  ],
+                  [
+                    "number1",
+                    "10"
+                  ],
+                  [
+                    "number2",
+                    "300"
+                  ],
+                  [
+                    "result",
+                    "310"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          }
+        }
+      ],
+      "status": "SUCCESSFUL"
+    },
+    {
+      "scenario": {
+        "title": "scenario division of two numbers",
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": {
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ]
+            },
+            "propertiesAsString": "",
+            "namedParameters": []
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "|sign|number1|number2|result|\r\n|-|10|2|8|\r\n|-|120|20|100|",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [
+            "sign",
+            "number1",
+            "number2",
+            "result"
+          ],
+          "data": [
+            [
+              [
+                "sign",
+                "-"
+              ],
+              [
+                "number1",
+                "10"
+              ],
+              [
+                "number2",
+                "2"
+              ],
+              [
+                "result",
+                "8"
+              ]
+            ],
+            [
+              [
+                "sign",
+                "-"
+              ],
+              [
+                "number1",
+                "120"
+              ],
+              [
+                "number2",
+                "20"
+              ],
+              [
+                "result",
+                "100"
+              ]
+            ]
+          ],
+          "properties": {
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ]
+          },
+          "propertiesAsString": "",
+          "namedParameters": []
+        },
+        "steps": [
+          "Given user opens calculator page",
+          "And user gets empty entry field",
+          "When user selects the first number as <number1>",
+          "And user selects the operation sign as <sign>",
+          "And user selects the second number as <number2>",
+          "And user selects the equal sign",
+          "Then user gets the result as <result>",
+          "And user closes calculator page"
+        ]
+      },
+      "storyPath": "stories/calculator.story",
+      "allowed": true,
+      "examplePerformableScenarios": [
+        {
+          "parameters": [
+            [
+              "sign",
+              "-"
+            ],
+            [
+              "number1",
+              "10"
+            ],
+            [
+              "number2",
+              "2"
+            ],
+            [
+              "result",
+              "8"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [],
+            "results": [
+              {
+                "step": "Given user opens calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given user opens calculator page",
+                "durationInMillis": 9623,
+                "start": 1522668693732,
+                "end": 1522668703355
+              },
+              {
+                "step": "And user gets empty entry field",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user gets empty entry field",
+                "durationInMillis": 104,
+                "start": 1522668703356,
+                "end": 1522668703460
+              },
+              {
+                "step": "When user selects the first number as <number1>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When user selects the first number as ｟10｠",
+                "durationInMillis": 77,
+                "start": 1522668703462,
+                "end": 1522668703539
+              },
+              {
+                "step": "And user selects the operation sign as <sign>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the operation sign as ｟-｠",
+                "durationInMillis": 99,
+                "start": 1522668703539,
+                "end": 1522668703638
+              },
+              {
+                "step": "And user selects the second number as <number2>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the second number as ｟2｠",
+                "durationInMillis": 42,
+                "start": 1522668703639,
+                "end": 1522668703681
+              },
+              {
+                "step": "And user selects the equal sign",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the equal sign",
+                "durationInMillis": 81,
+                "start": 1522668703681,
+                "end": 1522668703762
+              },
+              {
+                "step": "Then user gets the result as <result>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then user gets the result as ｟8｠",
+                "durationInMillis": 54,
+                "start": 1522668703772,
+                "end": 1522668703826
+              },
+              {
+                "step": "And user closes calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user closes calculator page",
+                "durationInMillis": 873,
+                "start": 1522668703827,
+                "end": 1522668704700
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          },
+          "storyAndScenarioMeta": {
+            "properties": []
+          },
+          "scenario": {
+            "title": "scenario division of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|-|10|2|8|\r\n|-|120|20|100|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "-"
+                  ],
+                  [
+                    "number1",
+                    "10"
+                  ],
+                  [
+                    "number2",
+                    "2"
+                  ],
+                  [
+                    "result",
+                    "8"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "-"
+                  ],
+                  [
+                    "number1",
+                    "120"
+                  ],
+                  [
+                    "number2",
+                    "20"
+                  ],
+                  [
+                    "result",
+                    "100"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          }
+        },
+        {
+          "parameters": [
+            [
+              "sign",
+              "-"
+            ],
+            [
+              "number1",
+              "120"
+            ],
+            [
+              "number2",
+              "20"
+            ],
+            [
+              "result",
+              "100"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [],
+            "results": [
+              {
+                "step": "Given user opens calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given user opens calculator page",
+                "durationInMillis": 9193,
+                "start": 1522668704700,
+                "end": 1522668713893
+              },
+              {
+                "step": "And user gets empty entry field",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user gets empty entry field",
+                "durationInMillis": 97,
+                "start": 1522668713894,
+                "end": 1522668713991
+              },
+              {
+                "step": "When user selects the first number as <number1>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When user selects the first number as ｟120｠",
+                "durationInMillis": 83,
+                "start": 1522668713993,
+                "end": 1522668714076
+              },
+              {
+                "step": "And user selects the operation sign as <sign>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the operation sign as ｟-｠",
+                "durationInMillis": 78,
+                "start": 1522668714077,
+                "end": 1522668714155
+              },
+              {
+                "step": "And user selects the second number as <number2>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the second number as ｟20｠",
+                "durationInMillis": 47,
+                "start": 1522668714155,
+                "end": 1522668714202
+              },
+              {
+                "step": "And user selects the equal sign",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the equal sign",
+                "durationInMillis": 99,
+                "start": 1522668714202,
+                "end": 1522668714301
+              },
+              {
+                "step": "Then user gets the result as <result>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then user gets the result as ｟100｠",
+                "durationInMillis": 59,
+                "start": 1522668714302,
+                "end": 1522668714361
+              },
+              {
+                "step": "And user closes calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user closes calculator page",
+                "durationInMillis": 889,
+                "start": 1522668714362,
+                "end": 1522668715251
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          },
+          "storyAndScenarioMeta": {
+            "properties": []
+          },
+          "scenario": {
+            "title": "scenario division of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|-|10|2|8|\r\n|-|120|20|100|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "-"
+                  ],
+                  [
+                    "number1",
+                    "10"
+                  ],
+                  [
+                    "number2",
+                    "2"
+                  ],
+                  [
+                    "result",
+                    "8"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "-"
+                  ],
+                  [
+                    "number1",
+                    "120"
+                  ],
+                  [
+                    "number2",
+                    "20"
+                  ],
+                  [
+                    "result",
+                    "100"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          }
+        }
+      ],
+      "status": "SUCCESSFUL"
+    },
+    {
+      "scenario": {
+        "title": "scenario multiplication of two numbers",
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": {
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ]
+            },
+            "propertiesAsString": "",
+            "namedParameters": []
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "|sign|number1|number2|result|\r\n|*|10|2|20|\r\n|*|0|20|0|",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [
+            "sign",
+            "number1",
+            "number2",
+            "result"
+          ],
+          "data": [
+            [
+              [
+                "sign",
+                "*"
+              ],
+              [
+                "number1",
+                "10"
+              ],
+              [
+                "number2",
+                "2"
+              ],
+              [
+                "result",
+                "20"
+              ]
+            ],
+            [
+              [
+                "sign",
+                "*"
+              ],
+              [
+                "number1",
+                "0"
+              ],
+              [
+                "number2",
+                "20"
+              ],
+              [
+                "result",
+                "0"
+              ]
+            ]
+          ],
+          "properties": {
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ]
+          },
+          "propertiesAsString": "",
+          "namedParameters": []
+        },
+        "steps": [
+          "Given user opens calculator page",
+          "And user gets empty entry field",
+          "When user selects the first number as <number1>",
+          "And user selects the operation sign as <sign>",
+          "And user selects the second number as <number2>",
+          "And user selects the equal sign",
+          "Then user gets the result as <result>",
+          "And user closes calculator page"
+        ]
+      },
+      "storyPath": "stories/calculator.story",
+      "allowed": true,
+      "examplePerformableScenarios": [
+        {
+          "parameters": [
+            [
+              "sign",
+              "*"
+            ],
+            [
+              "number1",
+              "10"
+            ],
+            [
+              "number2",
+              "2"
+            ],
+            [
+              "result",
+              "20"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [],
+            "results": [
+              {
+                "step": "Given user opens calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given user opens calculator page",
+                "durationInMillis": 8784,
+                "start": 1522668715261,
+                "end": 1522668724045
+              },
+              {
+                "step": "And user gets empty entry field",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user gets empty entry field",
+                "durationInMillis": 111,
+                "start": 1522668724047,
+                "end": 1522668724158
+              },
+              {
+                "step": "When user selects the first number as <number1>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When user selects the first number as ｟10｠",
+                "durationInMillis": 73,
+                "start": 1522668724160,
+                "end": 1522668724233
+              },
+              {
+                "step": "And user selects the operation sign as <sign>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the operation sign as ｟*｠",
+                "durationInMillis": 123,
+                "start": 1522668724233,
+                "end": 1522668724356
+              },
+              {
+                "step": "And user selects the second number as <number2>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the second number as ｟2｠",
+                "durationInMillis": 57,
+                "start": 1522668724356,
+                "end": 1522668724413
+              },
+              {
+                "step": "And user selects the equal sign",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the equal sign",
+                "durationInMillis": 73,
+                "start": 1522668724414,
+                "end": 1522668724487
+              },
+              {
+                "step": "Then user gets the result as <result>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then user gets the result as ｟20｠",
+                "durationInMillis": 67,
+                "start": 1522668724487,
+                "end": 1522668724554
+              },
+              {
+                "step": "And user closes calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user closes calculator page",
+                "durationInMillis": 900,
+                "start": 1522668724556,
+                "end": 1522668725456
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          },
+          "storyAndScenarioMeta": {
+            "properties": []
+          },
+          "scenario": {
+            "title": "scenario multiplication of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|*|10|2|20|\r\n|*|0|20|0|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "*"
+                  ],
+                  [
+                    "number1",
+                    "10"
+                  ],
+                  [
+                    "number2",
+                    "2"
+                  ],
+                  [
+                    "result",
+                    "20"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "*"
+                  ],
+                  [
+                    "number1",
+                    "0"
+                  ],
+                  [
+                    "number2",
+                    "20"
+                  ],
+                  [
+                    "result",
+                    "0"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          }
+        },
+        {
+          "parameters": [
+            [
+              "sign",
+              "*"
+            ],
+            [
+              "number1",
+              "0"
+            ],
+            [
+              "number2",
+              "20"
+            ],
+            [
+              "result",
+              "0"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [],
+            "results": [
+              {
+                "step": "Given user opens calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given user opens calculator page",
+                "durationInMillis": 10346,
+                "start": 1522668725456,
+                "end": 1522668735802
+              },
+              {
+                "step": "And user gets empty entry field",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user gets empty entry field",
+                "durationInMillis": 106,
+                "start": 1522668735806,
+                "end": 1522668735912
+              },
+              {
+                "step": "When user selects the first number as <number1>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When user selects the first number as ｟0｠",
+                "durationInMillis": 74,
+                "start": 1522668735914,
+                "end": 1522668735988
+              },
+              {
+                "step": "And user selects the operation sign as <sign>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the operation sign as ｟*｠",
+                "durationInMillis": 80,
+                "start": 1522668735988,
+                "end": 1522668736068
+              },
+              {
+                "step": "And user selects the second number as <number2>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the second number as ｟20｠",
+                "durationInMillis": 56,
+                "start": 1522668736068,
+                "end": 1522668736124
+              },
+              {
+                "step": "And user selects the equal sign",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the equal sign",
+                "durationInMillis": 91,
+                "start": 1522668736125,
+                "end": 1522668736216
+              },
+              {
+                "step": "Then user gets the result as <result>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then user gets the result as ｟0｠",
+                "durationInMillis": 50,
+                "start": 1522668736226,
+                "end": 1522668736276
+              },
+              {
+                "step": "And user closes calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user closes calculator page",
+                "durationInMillis": 1068,
+                "start": 1522668736278,
+                "end": 1522668737346
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          },
+          "storyAndScenarioMeta": {
+            "properties": []
+          },
+          "scenario": {
+            "title": "scenario multiplication of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|*|10|2|20|\r\n|*|0|20|0|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "*"
+                  ],
+                  [
+                    "number1",
+                    "10"
+                  ],
+                  [
+                    "number2",
+                    "2"
+                  ],
+                  [
+                    "result",
+                    "20"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "*"
+                  ],
+                  [
+                    "number1",
+                    "0"
+                  ],
+                  [
+                    "number2",
+                    "20"
+                  ],
+                  [
+                    "result",
+                    "0"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          }
+        }
+      ],
+      "status": "SUCCESSFUL"
+    },
+    {
+      "scenario": {
+        "title": "scenario division of two numbers",
+        "meta": {
+          "properties": []
+        },
+        "givenStories": {
+          "givenStories": [],
+          "givenStoriesAsString": "",
+          "examplesTable": {
+            "tableAsString": "",
+            "tableTransformers": {
+              "transformers": [
+                [
+                  "FORMATTING",
+                  {}
+                ],
+                [
+                  "REPLACING",
+                  {}
+                ],
+                [
+                  "FROM_LANDSCAPE",
+                  {}
+                ]
+              ]
+            },
+            "headers": [],
+            "data": [],
+            "properties": {
+              "properties": [
+                {
+                  "@name": "headerSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "valueSeparator",
+                  "@value": "|"
+                },
+                {
+                  "@name": "ignorableSeparator",
+                  "@value": "|--"
+                }
+              ]
+            },
+            "propertiesAsString": "",
+            "namedParameters": []
+          }
+        },
+        "examplesTable": {
+          "tableAsString": "|sign|number1|number2|result|\r\n|/|16|8|2|\r\n|/|100|0|Infinity|",
+          "tableTransformers": {
+            "transformers": [
+              [
+                "FORMATTING",
+                {}
+              ],
+              [
+                "REPLACING",
+                {}
+              ],
+              [
+                "FROM_LANDSCAPE",
+                {}
+              ]
+            ]
+          },
+          "headers": [
+            "sign",
+            "number1",
+            "number2",
+            "result"
+          ],
+          "data": [
+            [
+              [
+                "sign",
+                "/"
+              ],
+              [
+                "number1",
+                "16"
+              ],
+              [
+                "number2",
+                "8"
+              ],
+              [
+                "result",
+                "2"
+              ]
+            ],
+            [
+              [
+                "sign",
+                "/"
+              ],
+              [
+                "number1",
+                "100"
+              ],
+              [
+                "number2",
+                "0"
+              ],
+              [
+                "result",
+                "Infinity"
+              ]
+            ]
+          ],
+          "properties": {
+            "properties": [
+              {
+                "@name": "headerSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "valueSeparator",
+                "@value": "|"
+              },
+              {
+                "@name": "ignorableSeparator",
+                "@value": "|--"
+              }
+            ]
+          },
+          "propertiesAsString": "",
+          "namedParameters": []
+        },
+        "steps": [
+          "Given user opens calculator page",
+          "And user gets empty entry field",
+          "When user selects the first number as <number1>",
+          "And user selects the operation sign as <sign>",
+          "And user selects the second number as <number2>",
+          "And user selects the equal sign",
+          "Then user gets the result as <result>",
+          "And user closes calculator page"
+        ]
+      },
+      "storyPath": "stories/calculator.story",
+      "allowed": true,
+      "examplePerformableScenarios": [
+        {
+          "parameters": [
+            [
+              "sign",
+              "/"
+            ],
+            [
+              "number1",
+              "16"
+            ],
+            [
+              "number2",
+              "8"
+            ],
+            [
+              "result",
+              "2"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [],
+            "results": [
+              {
+                "step": "Given user opens calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given user opens calculator page",
+                "durationInMillis": 10040,
+                "start": 1522668737366,
+                "end": 1522668747406
+              },
+              {
+                "step": "And user gets empty entry field",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user gets empty entry field",
+                "durationInMillis": 272,
+                "start": 1522668747407,
+                "end": 1522668747679
+              },
+              {
+                "step": "When user selects the first number as <number1>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When user selects the first number as ｟16｠",
+                "durationInMillis": 234,
+                "start": 1522668747680,
+                "end": 1522668747914
+              },
+              {
+                "step": "And user selects the operation sign as <sign>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the operation sign as ｟/｠",
+                "durationInMillis": 84,
+                "start": 1522668747915,
+                "end": 1522668747999
+              },
+              {
+                "step": "And user selects the second number as <number2>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the second number as ｟8｠",
+                "durationInMillis": 41,
+                "start": 1522668748010,
+                "end": 1522668748051
+              },
+              {
+                "step": "And user selects the equal sign",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the equal sign",
+                "durationInMillis": 90,
+                "start": 1522668748053,
+                "end": 1522668748143
+              },
+              {
+                "step": "Then user gets the result as <result>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then user gets the result as ｟2｠",
+                "durationInMillis": 55,
+                "start": 1522668748145,
+                "end": 1522668748200
+              },
+              {
+                "step": "And user closes calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user closes calculator page",
+                "durationInMillis": 865,
+                "start": 1522668748202,
+                "end": 1522668749067
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          },
+          "storyAndScenarioMeta": {
+            "properties": []
+          },
+          "scenario": {
+            "title": "scenario division of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|/|16|8|2|\r\n|/|100|0|Infinity|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "/"
+                  ],
+                  [
+                    "number1",
+                    "16"
+                  ],
+                  [
+                    "number2",
+                    "8"
+                  ],
+                  [
+                    "result",
+                    "2"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "/"
+                  ],
+                  [
+                    "number1",
+                    "100"
+                  ],
+                  [
+                    "number2",
+                    "0"
+                  ],
+                  [
+                    "result",
+                    "Infinity"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          }
+        },
+        {
+          "parameters": [
+            [
+              "sign",
+              "/"
+            ],
+            [
+              "number1",
+              "100"
+            ],
+            [
+              "number2",
+              "0"
+            ],
+            [
+              "result",
+              "Infinity"
+            ]
+          ],
+          "givenStories": [],
+          "beforeSteps": {
+            "matches": []
+          },
+          "steps": {
+            "matches": [],
+            "results": [
+              {
+                "step": "Given user opens calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Given user opens calculator page",
+                "durationInMillis": 10445,
+                "start": 1522668749067,
+                "end": 1522668759512
+              },
+              {
+                "step": "And user gets empty entry field",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user gets empty entry field",
+                "durationInMillis": 430,
+                "start": 1522668759513,
+                "end": 1522668759943
+              },
+              {
+                "step": "When user selects the first number as <number1>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "When user selects the first number as ｟100｠",
+                "durationInMillis": 78,
+                "start": 1522668759944,
+                "end": 1522668760022
+              },
+              {
+                "step": "And user selects the operation sign as <sign>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the operation sign as ｟/｠",
+                "durationInMillis": 88,
+                "start": 1522668760022,
+                "end": 1522668760110
+              },
+              {
+                "step": "And user selects the second number as <number2>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the second number as ｟0｠",
+                "durationInMillis": 44,
+                "start": 1522668760111,
+                "end": 1522668760155
+              },
+              {
+                "step": "And user selects the equal sign",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user selects the equal sign",
+                "durationInMillis": 84,
+                "start": 1522668760156,
+                "end": 1522668760240
+              },
+              {
+                "step": "Then user gets the result as <result>",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "Then user gets the result as ｟Infinity｠",
+                "durationInMillis": 50,
+                "start": 1522668760241,
+                "end": 1522668760291
+              },
+              {
+                "step": "And user closes calculator page",
+                "type": "SUCCESSFUL",
+                "parametrisedStep": "And user closes calculator page",
+                "durationInMillis": 873,
+                "start": 1522668760292,
+                "end": 1522668761165
+              }
+            ]
+          },
+          "afterSteps": {
+            "matches": []
+          },
+          "storyAndScenarioMeta": {
+            "properties": []
+          },
+          "scenario": {
+            "title": "scenario division of two numbers",
+            "meta": {
+              "properties": []
+            },
+            "givenStories": {
+              "givenStories": [],
+              "givenStoriesAsString": "",
+              "examplesTable": {
+                "tableAsString": "",
+                "tableTransformers": {
+                  "transformers": [
+                    [
+                      "FORMATTING",
+                      {}
+                    ],
+                    [
+                      "REPLACING",
+                      {}
+                    ],
+                    [
+                      "FROM_LANDSCAPE",
+                      {}
+                    ]
+                  ]
+                },
+                "headers": [],
+                "data": [],
+                "properties": {
+                  "properties": [
+                    {
+                      "@name": "headerSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "valueSeparator",
+                      "@value": "|"
+                    },
+                    {
+                      "@name": "ignorableSeparator",
+                      "@value": "|--"
+                    }
+                  ]
+                },
+                "propertiesAsString": "",
+                "namedParameters": []
+              }
+            },
+            "examplesTable": {
+              "tableAsString": "|sign|number1|number2|result|\r\n|/|16|8|2|\r\n|/|100|0|Infinity|",
+              "tableTransformers": {
+                "transformers": [
+                  [
+                    "FORMATTING",
+                    {}
+                  ],
+                  [
+                    "REPLACING",
+                    {}
+                  ],
+                  [
+                    "FROM_LANDSCAPE",
+                    {}
+                  ]
+                ]
+              },
+              "headers": [
+                "sign",
+                "number1",
+                "number2",
+                "result"
+              ],
+              "data": [
+                [
+                  [
+                    "sign",
+                    "/"
+                  ],
+                  [
+                    "number1",
+                    "16"
+                  ],
+                  [
+                    "number2",
+                    "8"
+                  ],
+                  [
+                    "result",
+                    "2"
+                  ]
+                ],
+                [
+                  [
+                    "sign",
+                    "/"
+                  ],
+                  [
+                    "number1",
+                    "100"
+                  ],
+                  [
+                    "number2",
+                    "0"
+                  ],
+                  [
+                    "result",
+                    "Infinity"
+                  ]
+                ]
+              ],
+              "properties": {
+                "properties": [
+                  {
+                    "@name": "headerSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "valueSeparator",
+                    "@value": "|"
+                  },
+                  {
+                    "@name": "ignorableSeparator",
+                    "@value": "|--"
+                  }
+                ]
+              },
+              "propertiesAsString": "",
+              "namedParameters": []
+            },
+            "steps": [
+              "Given user opens calculator page",
+              "And user gets empty entry field",
+              "When user selects the first number as <number1>",
+              "And user selects the operation sign as <sign>",
+              "And user selects the second number as <number2>",
+              "And user selects the equal sign",
+              "Then user gets the result as <result>",
+              "And user closes calculator page"
+            ]
+          }
+        }
+      ],
+      "status": "SUCCESSFUL"
+    }
+  ]
+}}

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="Calculator" skipped="0" tests="2" time="0.35" timestamp="2018-04-01T22:00:04.590+03:00[Europe/Helsinki]"><testcase name="scenario addition"/><testcase name="scenario addition of two numbers"><error type="java.lang.NullPointerException"/><system-err>null&#13;
+myqualityassurance.Calculator2.givenUserGetsEmptyEntryField(Calculator2.java:46)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,225 @@
+<html>
+<head>
+<title>stories.calculator</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">stories/calculator.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> user</div>
+<div class="element asA"><span class="keyword asA">I want to</span> make an operation</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I can get results of two numbers</div>
+</div>
+<div class="scenario">
+<h2>Scenario: scenario addition of two numbers</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given user opens calculator page</div>
+<div class="step">And user gets empty entry field</div>
+<div class="step">When user selects the first number as &lt;number1&gt;</div>
+<div class="step">And user selects the operation sign as &lt;sign&gt;</div>
+<div class="step">And user selects the second number as &lt;number2&gt;</div>
+<div class="step">And user selects the equal sign</div>
+<div class="step">Then user gets the result as &lt;result&gt;</div>
+<div class="step">And user closes calculator page</div>
+<table>
+<thead>
+<tr>
+<th>sign</th><th>number1</th><th>number2</th><th>result</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>+</td><td>1</td><td>2</td><td>3</td></tr>
+<tr>
+<td>+</td><td>10</td><td>300</td><td>310</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {sign=+, number1=1, number2=2, result=3}</h3>
+<div class="step successful">Given user opens calculator page</div>
+<div class="step successful">And user gets empty entry field</div>
+<div class="step successful">When user selects the first number as <span class="step parameter">1</span></div>
+<div class="step successful">And user selects the operation sign as <span class="step parameter">+</span></div>
+<div class="step successful">And user selects the second number as <span class="step parameter">2</span></div>
+<div class="step successful">And user selects the equal sign</div>
+<div class="step successful">Then user gets the result as <span class="step parameter">3</span></div>
+<div class="step successful">And user closes calculator page</div>
+
+<h3 class="example">Example: {sign=+, number1=10, number2=300, result=310}</h3>
+<div class="step successful">Given user opens calculator page</div>
+<div class="step successful">And user gets empty entry field</div>
+<div class="step successful">When user selects the first number as <span class="step parameter">10</span></div>
+<div class="step successful">And user selects the operation sign as <span class="step parameter">+</span></div>
+<div class="step successful">And user selects the second number as <span class="step parameter">300</span></div>
+<div class="step successful">And user selects the equal sign</div>
+<div class="step successful">Then user gets the result as <span class="step parameter">310</span></div>
+<div class="step successful">And user closes calculator page</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: scenario division of two numbers</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given user opens calculator page</div>
+<div class="step">And user gets empty entry field</div>
+<div class="step">When user selects the first number as &lt;number1&gt;</div>
+<div class="step">And user selects the operation sign as &lt;sign&gt;</div>
+<div class="step">And user selects the second number as &lt;number2&gt;</div>
+<div class="step">And user selects the equal sign</div>
+<div class="step">Then user gets the result as &lt;result&gt;</div>
+<div class="step">And user closes calculator page</div>
+<table>
+<thead>
+<tr>
+<th>sign</th><th>number1</th><th>number2</th><th>result</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>-</td><td>10</td><td>2</td><td>8</td></tr>
+<tr>
+<td>-</td><td>120</td><td>20</td><td>100</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {sign=-, number1=10, number2=2, result=8}</h3>
+<div class="step successful">Given user opens calculator page</div>
+<div class="step successful">And user gets empty entry field</div>
+<div class="step successful">When user selects the first number as <span class="step parameter">10</span></div>
+<div class="step successful">And user selects the operation sign as <span class="step parameter">-</span></div>
+<div class="step successful">And user selects the second number as <span class="step parameter">2</span></div>
+<div class="step successful">And user selects the equal sign</div>
+<div class="step successful">Then user gets the result as <span class="step parameter">8</span></div>
+<div class="step successful">And user closes calculator page</div>
+
+<h3 class="example">Example: {sign=-, number1=120, number2=20, result=100}</h3>
+<div class="step successful">Given user opens calculator page</div>
+<div class="step successful">And user gets empty entry field</div>
+<div class="step successful">When user selects the first number as <span class="step parameter">120</span></div>
+<div class="step successful">And user selects the operation sign as <span class="step parameter">-</span></div>
+<div class="step successful">And user selects the second number as <span class="step parameter">20</span></div>
+<div class="step successful">And user selects the equal sign</div>
+<div class="step successful">Then user gets the result as <span class="step parameter">100</span></div>
+<div class="step successful">And user closes calculator page</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: scenario multiplication of two numbers</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given user opens calculator page</div>
+<div class="step">And user gets empty entry field</div>
+<div class="step">When user selects the first number as &lt;number1&gt;</div>
+<div class="step">And user selects the operation sign as &lt;sign&gt;</div>
+<div class="step">And user selects the second number as &lt;number2&gt;</div>
+<div class="step">And user selects the equal sign</div>
+<div class="step">Then user gets the result as &lt;result&gt;</div>
+<div class="step">And user closes calculator page</div>
+<table>
+<thead>
+<tr>
+<th>sign</th><th>number1</th><th>number2</th><th>result</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>*</td><td>10</td><td>2</td><td>20</td></tr>
+<tr>
+<td>*</td><td>0</td><td>20</td><td>0</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {sign=*, number1=10, number2=2, result=20}</h3>
+<div class="step successful">Given user opens calculator page</div>
+<div class="step successful">And user gets empty entry field</div>
+<div class="step successful">When user selects the first number as <span class="step parameter">10</span></div>
+<div class="step successful">And user selects the operation sign as <span class="step parameter">*</span></div>
+<div class="step successful">And user selects the second number as <span class="step parameter">2</span></div>
+<div class="step successful">And user selects the equal sign</div>
+<div class="step successful">Then user gets the result as <span class="step parameter">20</span></div>
+<div class="step successful">And user closes calculator page</div>
+
+<h3 class="example">Example: {sign=*, number1=0, number2=20, result=0}</h3>
+<div class="step successful">Given user opens calculator page</div>
+<div class="step successful">And user gets empty entry field</div>
+<div class="step successful">When user selects the first number as <span class="step parameter">0</span></div>
+<div class="step successful">And user selects the operation sign as <span class="step parameter">*</span></div>
+<div class="step successful">And user selects the second number as <span class="step parameter">20</span></div>
+<div class="step successful">And user selects the equal sign</div>
+<div class="step successful">Then user gets the result as <span class="step parameter">0</span></div>
+<div class="step successful">And user closes calculator page</div>
+</div>
+</div>
+<div class="scenario">
+<h2>Scenario: scenario division of two numbers</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given user opens calculator page</div>
+<div class="step">And user gets empty entry field</div>
+<div class="step">When user selects the first number as &lt;number1&gt;</div>
+<div class="step">And user selects the operation sign as &lt;sign&gt;</div>
+<div class="step">And user selects the second number as &lt;number2&gt;</div>
+<div class="step">And user selects the equal sign</div>
+<div class="step">Then user gets the result as &lt;result&gt;</div>
+<div class="step">And user closes calculator page</div>
+<table>
+<thead>
+<tr>
+<th>sign</th><th>number1</th><th>number2</th><th>result</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>/</td><td>16</td><td>8</td><td>2</td></tr>
+<tr>
+<td>/</td><td>100</td><td>0</td><td>Infinity</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {sign=/, number1=16, number2=8, result=2}</h3>
+<div class="step successful">Given user opens calculator page</div>
+<div class="step successful">And user gets empty entry field</div>
+<div class="step successful">When user selects the first number as <span class="step parameter">16</span></div>
+<div class="step successful">And user selects the operation sign as <span class="step parameter">/</span></div>
+<div class="step successful">And user selects the second number as <span class="step parameter">8</span></div>
+<div class="step successful">And user selects the equal sign</div>
+<div class="step successful">Then user gets the result as <span class="step parameter">2</span></div>
+<div class="step successful">And user closes calculator page</div>
+
+<h3 class="example">Example: {sign=/, number1=100, number2=0, result=Infinity}</h3>
+<div class="step successful">Given user opens calculator page</div>
+<div class="step successful">And user gets empty entry field</div>
+<div class="step successful">When user selects the first number as <span class="step parameter">100</span></div>
+<div class="step successful">And user selects the operation sign as <span class="step parameter">/</span></div>
+<div class="step successful">And user selects the second number as <span class="step parameter">0</span></div>
+<div class="step successful">And user selects the equal sign</div>
+<div class="step successful">Then user gets the result as <span class="step parameter">Infinity</span></div>
+<div class="step successful">And user closes calculator page</div>
+</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>
